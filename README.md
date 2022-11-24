@@ -105,3 +105,33 @@ Navigator berfungsi untuk membuat widget yang berdiri dengan basis prinsip stack
 6. Membuat halaman displayBudget untuk menampilkan list yang ditambahkan melalui form.
 
 
+
+# TUGAS 9
+
+### Apa bisa mengambul data JSON tanpa membuat model?
+
+Bisa, namun bisa saja terjadi kasus dimana data yang ingin diambil tidak sesuai atau tidak sinkron dengan model data yang diinginkan. Tentu saja hal iini tidak lebih baik dibandingkan dengan membuat model terlebih dahulu dalam melakukan pengambilan data JSON.
+
+
+### Widgert yang digunakan
+Column untuk membuat komponen di dalamnya teratur seperti sebuah kolom, row agar komponen di dalamnya berbaris, text untuk menampilkan text data-data yang telah diambil, boxdecoration untuk melakukan design kepada container, textstyle untuk styling tetx, listview untuk list widget, future builder untuk generate widgets dari satu snapshot, roundedrectangleborder untuk styling sisi border jadi rounded, align untuk alignment, padding untuk membuat space kosong, card untuk menampilkan data dalam bentuk card, dll
+
+### Mekanisme pengamblan data dari json
+
+* Menambahkan dependensi http dengan perintah flutter pub add http
+* Membuat function http request GET sebagai mekanisme pengubahan response menjadi type json
+* Membuat model
+* Melakukan method GET
+* Membuat widget futureBuilder untuk menampilkan data
+
+
+### Implementasi
+
+1. Menambahkan dependency http
+2. Menambahkan halaman myWatchListPage untuk persiapan page data mywatchList, agar bisa didaftarkan ke tombol navigasi di drawer
+3. Membuat model untuk my watch list
+4. Fetch data json dari tugas mywatchlist sebelumnya
+5. Mengimplementasikan data watchlist yang telah diambil pada page myWatchListPage dengan bentuk card. 
+6. Mengambil semua data watchlist ke dalam detail page
+7. Mengaktifkan tombol onTap pada card agar bisa redirect ke halaman detail
+

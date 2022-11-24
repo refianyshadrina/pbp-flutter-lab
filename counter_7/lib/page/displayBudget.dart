@@ -1,5 +1,5 @@
-import 'package:counter_7/drawer.dart';
-import 'package:counter_7/data_budget.dart';
+import 'package:counter_7/page/drawer.dart';
+import 'package:counter_7/model/data_budget.dart';
 import 'package:flutter/material.dart';
 
 class displayBudget extends StatefulWidget {

@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:counter_7/main.dart';
-import 'package:counter_7/displayBudget.dart';
-import 'package:counter_7/form.dart';
+import 'package:counter_7/page/displayBudget.dart';
+import 'package:counter_7/page/form.dart';
+import 'package:counter_7/page/myWatchListPage.dart';
 
 class MyDrawer extends StatelessWidget {
   const MyDrawer({Key? key}) : super(key: key);
@@ -34,7 +35,17 @@ class MyDrawer extends StatelessWidget {
               context,
               MaterialPageRoute(builder: (context) => const displayBudget()),
             );
-          })
+          }),
+      ListTile(
+        title: const Text('Watch List'),
+        onTap: () {
+          // Route menu ke halaman utama
+          Navigator.push(
+            context,
+            MaterialPageRoute(builder: (context) => const MyWatchList()),
+          );
+        },
+      ),
     ]));
   }
 }
